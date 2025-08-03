@@ -20,22 +20,9 @@ const fetchWeatherData = async (city) => {
 
 // Function to display weather data on the webpage
 const displayWeatherData = () => {
-    const weatherContainer = document.getElementById('weather-container');
-    weatherContainer.innerHTML = `
-        <h2>${weatherData.name}, ${weatherData.sys.country}</h2>
+    const weatherContainer = documentementById('weather-container');
+    weatherContainer.innerHTML =${weatherData.name}, ${weatherData.sys.country}
         <p>Temperature: ${weatherData.main.temp} °C</p>
-        <p>Weather: ${weatherData.weather[0].description}</p>
+        <p>Weathe: ${weatherData.weather[0].description}</p>
         <p>Humidity: ${weatherData.main.humidity}%</p>
-        <p>Wind Speed: ${weatherData.wind.speed} m/s</p>
-    `;
-};
-
-// Event listener for the search button
-document.getElementById('search-btn').addEventListener('click', () => {
-    const cityInput = document.getElementById('city-input').value;
-    if (cityInput) {
-        fetchWeatherData(cityInput);
-    } else {
-        alert('Please enter a city name');
-    }
-});
+        <p>Wind 
