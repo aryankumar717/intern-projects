@@ -58,16 +58,3 @@ body {
   color: #ffffc7;
   font-size: 5vmin;
 }
-
-.msg-container {
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.hide {
-  display: none;
-}
