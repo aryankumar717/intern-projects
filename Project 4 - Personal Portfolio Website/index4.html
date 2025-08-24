@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
+    <link rel="stylesheet" href="style4.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: brown;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            height: 80px;
+            background-color: #832a2a;
+        }
+
+        .right {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(12, 20, 66);
+            font-size: 1.2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px;
+            flex-wrap: wrap;
+        }
+
+        .firstSection>div {
+            width: 40%;
+            height: 50vh;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            line-height: 1.4;
+            margin: 70px;
+        }
+
+        .purple {
+            color: #c77dff;
+        }
+
+        #element {
+            color: #c77dff;
+            font-weight: bold;
+        }
+
+        .rightSection img {
+            max-width: 450px;
+            height: auto;
+            border-radius: 25%;
+            border: 5px solid white;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            padding-bottom: 40px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #c77dff;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a455f5;
+            color: white;
+        }
+
+        .rightSection {
+            margin-right: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .secondSection h1 {
+            font-size: 2.7rem;
+            color: #4276de;
+            margin-bottom: 20px;
+        }
+
+        .secondSection p {
+            font-size: 1.5rem;
+            color: #c9a5b8;
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            display: inline-block;
+            background-color: #fff;
+            color: #832a2a;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .skill:hover {
+            background-color: #c77dff;
+            color: white;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            height: 80px;
+            background-color: #d1a8a8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5c1c1c;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="right">Aryan Portfolio</div>
+            <div class="left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <div>Hi,</div>
+                <div>I'm <span class="purple">Aryan Kumar</span></div>
+                <div>and I am a</div>
+                <div><span id="element"></span></div>
+            </div>
+            <div class="rightSection">
+                <img src="your-photo.jpg" alt="Your Photo" />
+            </div>
+        </section>
+        <section class="secondSection" id="about">
+            <h1>About Me</h1>
+            <p>Hello! I’m Aryan Kumar, a Computer Science Engineering student with a strong interest in web development,
+                programming, and problem solving. I love turning ideas into real, functional projects using code.</p>
+            <p>
+                <strong>Education</strong><br>
+                Bachelor of Technology (B.Tech) in Computer Science and Engineering<br>
+                Noida Institute Of Engineering and Technology, Greater Noida, Uttar Pradesh, India<br>
+                2024–2028
+            </p>
+            <p>
+                <strong>High School</strong><br>
+                R.R.K. SR. SEC. SCHOOL, CHANDAUSI, Uttar Pradesh, India<br>
+                2021
+            </p>
+            <p>
+                <strong>Intermediate</strong><br>
+                R.R.K. SR. SEC. SCHOOL, CHANDAUSI, Uttar Pradesh, India<br>
+                2023
+            </p>
+
+            <button onclick="window.location.href='https://www.google.com'">Download My CV</button>
+            <hr>
+            <h1 id="skills">Skills</h1>
+            <div>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">C</span>
+                <span class="skill">Data Structures</span>
+                <span class="skill">Algorithms</span>
+                <span class="skill">Problem Solving</span>
+            </div>
+            <hr>
+            <h1 id="projects">Projects</h1>
+            <ul>
+                <li>Portfolio Website - HTML, CSS, JavaScript</li>
+                <li>Bank Management System - Python OOP & File Handling</li>
+                <li>Shopping Cart System - Python + JSON</li>
+                <li>Java DSA Practice</li>
+            </ul>
+            <hr>
+            <h1 id="contact">Contact Me</h1>
+            <h4>Feel free to reach out to me for any inquiries or collaborations!</h4>
+            <ul>
+                <li><a href="mailto:aryanthakur9761178796@gmail.com">Email</a></li>
+                <li><a href="https://github.com/aryankumar717" target="_blank">GitHub</a></li>
+                <li><a
+                        href="https://www.linkedin.com/in/aryan-kumar-571291334?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Engineer', 'Problem Solver', 'Tech Enthusiast'],
+            typeSpeed: 50,
+        });
+        console.log("Portfolio page loaded!");
+    </script>
+
+    <footer>
+        <p>© 2025 Aryan Kumar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
