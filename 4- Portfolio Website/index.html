@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="style4.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <span class="logo">Aryan's Portfolio</span>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#mywork">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hi,<br> I'm <span class="line-2">Aryan Kumar</span></h1>
+        <h2>and I am a <span id="element"></span></h2>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="bgphoto.jpg" alt="Aryan's photo" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            <i class="fas fa-user"></i>
+            <strong>Aryan Kumar</strong> – A passionate <strong>Web Developer</strong> and <strong>Software Programmer</strong> skilled in creating dynamic,
+            responsive, and user-focused applications. Driven by innovation, problem-solving, and a relentless pursuit of learning,
+            I transform ideas into impactful digital experiences.
+          </p>
+          <br />
+          <p>
+            I enjoy working with modern technologies and frameworks to build efficient and user-friendly interfaces.
+            Let's connect and collaborate on exciting projects!
+          </p>
+
+          <div class="tab-title">
+            <p class="tab-links btn" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links btn" onclick="opentab('education', event)">Education</p>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <i class="fas fa-briefcase"></i>
+                <span><strong>Internship – Prodigy Infotech (2 months)</strong></span><br /><br />
+                Designed, developed, and deployed multiple web applications and interactive projects,
+                showcasing strong expertise in front-end technologies, creativity, and problem-solving.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <i class="fas fa-graduation-cap"></i>
+                <span><strong>B.Tech in Computer Science & Engineering</strong></span><br />
+                Noida Institute of Engineering & Technology / Dr. A.P.J. Abdul Kalam Technical University<br />
+                <small>Oct 2024 – Dec 2028</small>
+              </li>
+              <li>
+                <i class="fas fa-school"></i>
+                <span><strong>Senior Secondary Education</strong></span><br />
+                R.R.K Senior Secondary School, Chandausi<br />
+                <small>Apr 2022 – Apr 2023</small>
+              </li>
+              <li>
+                <i class="fas fa-certificate"></i>
+                <span><strong>Certifications</strong></span><br />
+                C Programming (Infosys Springboard) – Apr 2025<br />
+                Microsoft Office 2016 (Infosys Springboard) – Apr 2025<br />
+                Programming Fundamentals using Python – Oct 2024<br />
+                Next Gen Technologies – Oct 2024
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Skills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Building responsive UIs with HTML, CSS & JavaScript.</p>
+        </div>
+        <div>
+          <i class="fas fa-file-code"></i>
+          <h2>Software & Scripting</h2>
+          <p>Backend logic and automation using Java, Python & C.</p>
+        </div>
+        <div>
+          <i class="fas fa-database"></i>
+          <h2>Database Management</h2>
+          <p>Database design and management with MySQL & SQL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mywork">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="project1.jpg" alt="Project 1" />
+          <div class="layer">
+            <h3>Calculator</h3>
+            <p>A calculator app built with HTML, CSS, and JavaScript.</p>
+            <a href="https://aryankumar717.github.io/calculator717/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="project2.jpg" alt="Project 2" />
+          <div class="layer">
+            <h3>Tic Tac Toe Game</h3>
+            <p>An interactive game built with a clean UI and JavaScript logic.</p>
+            <a href="https://aryankumar717.github.io/tic-tac-toe717/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="project3.jpg" alt="Project 3" />
+          <div class="layer">
+            <h3>Stopwatch</h3>
+            <p>A precise stopwatch with start, stop, and reset features.</p>
+            <a href="https://aryankumar717.github.io/stopwatch app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-paper-plane"></i> aryanthakur9761178796@gmail.com</p>
+          <p><i class="fas fa-phone-square-alt"></i> +91 7983209717</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/aryan_thakur717/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-kumar-571291334/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/aryankumar717" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+          <a href="resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="copyright">
+      <p>&copy; 2025 Aryan Kumar. All rights reserved. Made with <i class="fas fa-heart"></i></p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="script4.js"></script>
+</body>
+
+</html>
